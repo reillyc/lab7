@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Schnip - CVS Coupons</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/a5screen2.css" rel="stylesheet">
+	<script src="js/a5.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+		<div class="appbox" align="center">
+		
+			<!-- TOP -->
+			<div class="top_container">
+			<div class="store_text">CVS Coupons</div>
+			<img src ="images/top.jpg" width="348" height="90" alt="Top Screen2" usemap="#topmap">
+				<map name="topmap">
+					
+					<!-- SETTINGS DROPDOWN -->
+					<div class="dropdown">
+						<area shape="rect" coords="8,6,39,39" href="">
+							<div class="dropdown-content">
+							
+									<br>
+									
+									<form action="/action_page.php">
+										<input type="checkbox" name="tooptipon" value=""> Tool tips
+									<br>
+									<br>
+									</form>
+
+									<form action="/action_page.php">
+										<input type="checkbox" name="locationon" value=""> Location
+									<br>
+									<br>
+									</form>
+			
+									<form action="/action_page.php">
+										<input type="checkbox" name="Notificationon" value=""> Notifications
+									<br>
+									<br>
+									</form>
+
+									<a href="preferences">Preferences</a>
+				
+									<a href="addcard">Add Loyalty Card</a>
+									
+									<a href="/">Sign Out</a>
+							</div>
+					</div>
+					
+					<!-- SORT MENU -->
+					<div class="dropdownn">
+						<area shape="rect" coords="252,56,527,82" href="">
+						<div class="dropdownn-content" style="right:0;">
+								<a href="couponjson" target="coupon_frame">Best Deals</a>
+								<a href="coupon_expire" target="coupon_frame">Expiring Soon</a>
+								<a href="coupon_cat" target="coupon_frame">Categories</a>
+							</div>
+					</div>
+				</map>
+			</div>
+			
+			<!-- MIDDLE -->
+			<iframe name="coupon_frame" src="couponjson" style="border:none; padding:none; margin:none;" height="648" width="346"></iframe>
+			
+			<!-- BOTTOM -->
+			<div>
+			<img src ="images/bot_screen2.jpg" width="348" height="50" alt="Bot Screen2" usemap="#botmap">
+			<map name="botmap">
+				<area shape="rect" coords="11,12,48,41" href="main">
+				<area shape="circle" coords="321, 24, 24" href="checkout">
+			</map>
+			</div>
+		</div>
+		</body>
+</html>

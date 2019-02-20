@@ -2,39 +2,90 @@
 
 <html>
 <head>
-	<title>HCI Project Portfolio</title>	
+	<title> Schnip Login Screen </title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/introHCI.css" rel="stylesheet">
-  
+	<link href="css/a5screen2.css" rel="stylesheet">
+	<script src="js/a5.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 
 </head>
 
+ <script>
+ 	// onclick event is assigned to the #button element.
+ 	function validateForm() {
+ 		var x = document.forms["myForm"]["getuser"].value;
+ 		var y = document.forms["myForm"]["getpass"].value;
+ 		if ((x == "janedoe")&&(y == "pass123")){
+ 			window.location.href = 'main';
+ 		}else{
+ 			window.location.href = '/main';
+  			alert("Try Username: janedoe Password: pass123");
+  		}
+	}
+</script>
+
 <body>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
+		<div class="appbox" align="center">
+		
+			<!-- TOP -->
+			<div class="top_container" align="center">
+			<img src ="images/screen1_top.jpg" width="348" height="44" alt="Top Screen" usemap="#topmap">
+				<map name="topmap">
+					
+					<!-- SETTINGS DROPDOWN -->
+					<div class="dropdown">
+						<area shape="rect" coords="8,6,39,39" href="">
+							<div class="dropdown-content">
+							
+									<a href="#">Please Login First</a>
+									
+							</div>
+					</div>
+				</map>
+		</div>
+		<!-- Login -->
+		<div class="login" align="center">
+
+			<img src ="images/login_icon.png" width="212" height="212">
+			
+			<div class="container login-container">
+            <div class="row">
+                <div class="col-md-6 login-form-1">
+                	 <form>
+                        <div class="form-group">
+                            <input type="text" onsubmit="validateForm()" class="form-control" name="getuser" placeholder="Your Username *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" onsubmit="validateForm()" class="form-control" name="getpass" placeholder="Your Password *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" "class="btnSubmit" value="Login" />
+                        </div>
+                        <div class="form-group">
+                            <a href="main" class="ForgetPwd">Click me to progress</a>
+                        </div>
+                    </form>
+                   
+                    <div>
+                    	<img src ="images/facebook_login.png" width="112" height="38">
+                    	<img src ="images/google_login.png" width="112" height="38">
+                    	<img src ="images/signup_login.png" width="112" height="38">
+                    </div>
+                </div>
+            </div>
+
+			<script>
+
+			</script>
+		</div>
+		<!-- Bottom -->
+		<div>
+			<img src ="images/screen1_bot_blank.jpg" width="348" height="50">
+			
 		</div>
 
-		<h4>Projects</h4>
-		{{#each projects}}
-			<div class="project" id="{{id}}">
-				<div class="thumbnail">
-					<a href="/project/{{id}}">
-						<img src="images/{{image}}" alt="Lorem Pixel image" class="img-responsive">
-						<h4>{{title}}</h4>
-					</a>
-					<div class="likeCtr"><button class="btn btn-default likeBtn">Like</button></div>
-					<div class="details"></div>
-				</div>
-			</div>
-		{{/each}}
-
-
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/introHCI.js"></script>
+	</div>
 </body>
+
 </html>

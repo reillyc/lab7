@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Schnip Preferences</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/a5screen2.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="js/a5.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	
+</head>
+
+<body>
+		<div class="appbox" align="center">
+		
+			<!-- TOP -->
+			<div class="top_container" align="center">
+			<img src ="images/screen1_top.jpg" width="348" height="44" alt="Top Screen" usemap="#topmap">
+				<map name="topmap">
+					
+					<!-- SETTINGS DROPDOWN -->
+					<div class="dropdown3">
+						<area shape="rect" coords="8,6,39,39" href="">
+							<div class="dropdown3-content">
+							
+									<br>
+									
+									<form action="/action_page.php">
+										<input type="checkbox" name="tooptipon" value=""> Tool tips
+									<br>
+									<br>
+									</form>
+
+									<form action="/action_page.php">
+										<input type="checkbox" name="locationon" value=""> Location
+									<br>
+									<br>
+									</form>
+			
+									<form action="/action_page.php">
+										<input type="checkbox" name="Notificationon" value=""> Notifications
+									<br>
+									<br>
+									</form>
+
+									<a href="preferences">Preferences</a>
+				
+									<a href="addcard">Add Loyalty Card</a>
+									
+									<a href="/">Sign Out</a>
+							</div>
+					</div>
+				</map>
+		</div>
+
+
+		<!-- Preferences -->
+		<div class="addcard" align="center">
+			<div>
+				<b>Preferences</b>
+				<br>
+				<br>
+			</div>
+				<div>
+					<form action="/action_page.php">
+						<input type="checkbox" name="Allow location data" value="">  Allow Location Data
+					</form>
+				</div>
+				<div>
+					<form action="/action_page.php">
+						<input type="checkbox" name="Allow notifications" value="">  Allow Notification
+					</form>	
+				</div>
+				<div>
+					<form action="/action_page.php">
+						<input type="checkbox" name="Allow Tool Tips" value="">  Allow Tool Tips
+					</form>	
+				</div>
+
+				<div>
+    			</br>
+                	<form>
+    					<div class="form-group">
+                    		<input type="inputZipcode" class="form-control" placeholder="Your Zipcode *" value="" />
+                		</div>
+                		<div class="form-group">
+                        	<input type="submit" class="btnSubmit" value="Enter" />
+                		</div>
+                	</form>
+    			</div>
+
+				
+			</div>
+
+
+<!-- BOTTOM -->
+		<div>
+			<img src ="images/bot_screen2.jpg" width="348" height="50" alt="Bot Screen2" usemap="#botmap">
+			<map name="botmap">
+				<area shape="rect" coords="11,12,48,41" href="main">
+				<area shape="circle" coords="321, 24, 24" href="checkout">
+			</map>
+			</div>
+		</div>
+		</body>
+</html>
