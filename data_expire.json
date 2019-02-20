@@ -1,0 +1,65 @@
+{
+	"coupons": [
+		{
+
+			"product": "Boneless Skinless Chicken Breasts",
+			"Deal": "$7.99/lb",
+			"imageURL": "./images/chickenbreast.png"	
+		},
+		{
+
+			"product": "Fully Cooked Entrees",
+			"Deal": "$5.99/each",
+			"imageURL": "./images/cookedentrees.png"	
+		},
+		{
+
+			"product": "Cornish Game Hens",
+			"Deal": "$2.49/lb",
+			"imageURL": "./images/cornishhens.png"	
+		},
+		{
+
+			"product": "Alaska CoD Fillet",
+			"Deal": "$7.99/lb",
+			"imageURL": "./images/alaska.png"	
+		},
+		{
+
+			"product": "Bacon Wrapped Hot Dogs",
+			"Deal": "$5.99/each",
+			"imageURL": "./images/baconwrapped.png"	
+		},
+		{
+
+			"product": "Breaded Chicken Selections",
+			"Deal": "$5.99/each",
+			"imageURL": "./images/breadedchicken.png"	
+		},
+		{
+
+			"product": "Budding Lunchmeat",
+			"Deal": "$7.99/each",
+			"imageURL": "./images/buddinglunch.png"	
+		},
+		{
+
+			"product": "Fresh Dover Sole",
+			"Deal": "$6.99/lb",
+			"imageURL": "./images/fillet.png"	
+		},
+		{
+
+			"product": "Flat Iron Flank",
+			"Deal": "$8.99/lb",
+			"imageURL": "./images/flatiron.png"	
+		},
+		{
+
+			"product": "Grass Fed Beef",
+			"Deal": "$7.99/lb",
+			"imageURL": "./images/grassbeef.png"	
+		}
+		
+    ]
+}

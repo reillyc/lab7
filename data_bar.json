@@ -1,0 +1,55 @@
+{
+	"coupons": [
+		{
+
+			"product": "Boneless Skinless Chicken Breasts",
+			"imageURL": "./images/chickenbreast_bar.png"	
+		},
+		{
+
+			"product": "Fully Cooked Entrees",
+			"imageURL": "./images/cookedentrees_bar.png"	
+		},
+		{
+
+			"product": "Cornish Game Hens",
+			"imageURL": "./images/cornishhens_bar.png"	
+		},
+		{
+
+			"product": "Alaska CoD Fillet",
+			"imageURL": "./images/alaska_bar.png"	
+		},
+		{
+
+			"product": "Bacon Wrapped Hot Dogs",
+			"imageURL": "./images/baconwrapped_bar.png"	
+		},
+		{
+
+			"product": "Breaded Chicken Selections",
+			"imageURL": "./images/breadedchicken_bar.png"	
+		},
+		{
+
+			"product": "Budding Lunchmeat",
+			"imageURL": "./images/buddinglunch_bar.png"	
+		},
+		{
+
+			"product": "Fresh Dover Sole",
+			"imageURL": "./images/fillet_bar.png"	
+		},
+		{
+
+			"product": "Flat Iron Flank",
+			"imageURL": "./images/flatiron_bar.png"	
+		},
+		{
+
+			"product": "Grass Fed Beef",
+			"imageURL": "./images/grassbeef_bar.png"	
+		}
+		
+    ]
+}
