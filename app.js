@@ -10,6 +10,10 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var project = require('./routes/project');
+var stores = require('./routes/stores');
+var coupons = require('./routes/coupons');
+var setting = require('./routes/setting');
+
 // Example route
 // var user = require('./routes/user');
 
@@ -38,6 +42,33 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/project/:id', project.view);
+//Add routes here // add store routes
+app.get('/main', stores.maininfo);
+app.get('/99ranch', stores.nineinfo);
+app.get('/ralph', stores.ralphinfos);
+app.get('/walmart', stores.walinfo);
+app.get('/sprouts', stores.sprinfo);
+app.get('/vons', stores.vonsinfo);
+app.get('/costco', stores.cosinfo);
+app.get('/cvs', stores.cvsinfo);
+app.get('/traderjoes', stores.trinfo);
+app.get('/zionmarket', stores.zioninfo);
+app.get('/albertsons', stores.albertinfo);
+app.get('/food4less', stores.foodinfo);
+app.get('/pavillions', stores.pavinfo);
+app.get('/wholefoods', stores.wholeinfo);
+app.get('/northgate', stores.northinfo);
+app.get('/swapmain', stores.swapinfo);
+//Add routes here // add coupon handlebar
+app.get('/couponjson', coupons.couponslist);
+app.get('/coupon_cat', coupons.couponscata);
+app.get('/coupon_expire', coupons.couponsexp);
+app.get('/checkout', coupons.couponsbar);
+app.get('/barcodes', coupons.couponscodes);
+//Add setting routes
+app.get('/preferences', setting.prefdisplay);
+app.get('/addcard', setting.addloyalty);
+app.get('/signout', setting.returntosignin);
 // Example route
 // app.get('/users', user.list);
 
