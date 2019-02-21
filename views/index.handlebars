@@ -8,22 +8,10 @@
 	<link href="css/a5screen2.css" rel="stylesheet">
 	<script src="js/a5.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
 	 
 </head>
-
- <script>
- 	// onclick event is assigned to the #button element.
- 	function validateForm() {
- 		var x = document.forms["myForm"]["getuser"].value;
- 		var y = document.forms["myForm"]["getpass"].value;
- 		if ((x == "janedoe")&&(y == "pass123")){
- 			window.location.href = 'main';
- 		}else{
- 			window.location.href = '/main';
-  			alert("Try Username: janedoe Password: pass123");
-  		}
-	}
-</script>
 
 <body>
 		<div class="appbox" align="center">
@@ -46,13 +34,34 @@
 		</div>
 		<!-- Login -->
 		<div class="login" align="center">
-
-			<img src ="images/login_icon.png" width="212" height="212">
+			<!-- START -->
+		<div id="facebookPhoto" class="profile">
+			<h3>Profile Photo</h3>
+			<img id="photo" class='img-responsive' width="212" height="212" src="images/login_icon.png" />
+		</div>
+			<!-- END -->
 			
 			<div class="container login-container">
             <div class="row">
                 <div class="col-md-6 login-form-1">
-                	 <form>
+ 
+                   
+                    <div>
+                    	<p class="facebookLogin">Please login through Facebook
+                    	</br>
+							<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+							</fb:login-button>
+						</p>
+						<p hidden class="facebookLoginSuccess">
+							Login Successful
+						
+							</br>
+							 <button type="button" class="buttonSway" style="vertical-align:middle" onclick="javascript:window.location.href='main'">Enter</button>
+						</p>
+                    </div>
+
+                    	<!--  PLACEHOLDER FORM
+                     <form>
                         <div class="form-group">
                             <input type="text" onsubmit="validateForm()" class="form-control" name="getuser" placeholder="Your Username *" value="" />
                         </div>
@@ -66,12 +75,8 @@
                             <a href="main" class="ForgetPwd">Click me to progress</a>
                         </div>
                     </form>
-                   
-                    <div>
-                    	<img src ="images/facebook_login.png" width="112" height="38">
-                    	<img src ="images/google_login.png" width="112" height="38">
-                    	<img src ="images/signup_login.png" width="112" height="38">
-                    </div>
+
+                		-->
                 </div>
             </div>
 
